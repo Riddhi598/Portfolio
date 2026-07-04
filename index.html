@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio | Cyber Security Student</title>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #0f172a;
+            color: #cbd5e1;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #1e293b, #0f172a);
+            color: #38bdf8;
+            text-align: center;
+            padding: 3rem 1rem;
+            border-bottom: 2px solid #38bdf8;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 1.5rem;
+        }
+
+        .profile-section {
+            text-align: center;
+            margin-bottom: 2.5rem;
+        }
+
+        .profile-img {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #38bdf8;
+            box-shadow: 0 0 15px rgba(56, 189, 248, 0.5);
+        }
+
+        section {
+            background: #1e293b;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-radius: 12px;
+            border: 1px solid #334155;
+        }
+
+        h2, h1 {
+            color: #38bdf8;
+            margin-bottom: 1rem;
+        }
+
+        /* Skills Grid */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem;
+        }
+
+        .skill-card {
+            background: #0f172a;
+            padding: 0.8rem;
+            text-align: center;
+            border-radius: 6px;
+            border: 1px solid #38bdf8;
+            font-weight: bold;
+        }
+
+        /* Projects & Certifications Grid */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1rem;
+        }
+
+        .project-card {
+            background: #0f172a;
+            padding: 1.5rem;
+            border-radius: 8px;
+            border: 1px solid #334155;
+            transition: transform 0.2s;
+            margin-bottom: 1.5rem;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            border-color: #38bdf8;
+        }
+
+        .project-link {
+            display: inline-block;
+            margin-top: 1rem;
+            color: #38bdf8;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .project-link:hover {
+            text-decoration: underline;
+        }
+
+        .project-btn {
+            display: inline-block;
+            margin-top: 1rem;
+            color: #38bdf8;
+            background: none;
+            border: none;
+            font-weight: bold;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        .project-btn:hover {
+            text-decoration: underline;
+        }
+
+        /* Video container hack for responsive sizing */
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            border-radius: 8px;
+            border: 1px solid #334155;
+            margin: 1.5rem 0;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        /* Hidden Dedicated Tab Styles */
+        .hidden {
+            display: none;
+        }
+
+        .back-btn {
+            background: #38bdf8;
+            color: #0f172a;
+            border: none;
+            padding: 10px 20px;
+            font-weight: bold;
+            border-radius: 6px;
+            cursor: pointer;
+            margin-top: 1.5rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background: #1e293b;
+            color: #64748b;
+            margin-top: 3rem;
+            border-top: 1px solid #334155;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="main-portfolio">
+        <header>
+            <h1>My Portfolio</h1>
+            <p>Second Year Cyber Security Student</p>
+        </header>
+
+        <div class="container">
+            <div class="profile-section">
+                <img src="Screenshot 2026-07-01 202501.jpg" alt="My Profile Picture" class="profile-img">
+            </div>
+
+            <section>
+                <h2>About Me</h2>
+                <p>Hello! I am a passionate <strong>Second Year Cyber Security Student</strong>. I am currently pursuing Cyber Security with a keen interest in ethical hacking, Networking, and problem solving. I am highly motivated to continuously improve my technical and analytical skills.</p>
+            </section>
+
+            <section>
+                <h2>Skills Learned</h2>
+                <div class="skills-grid">
+                    <div class="skill-card">HTML5</div>
+                    <div class="skill-card">CSS3</div>
+                    <div class="skill-card">JavaScript</div>
+                    <div class="skill-card">C/C++</div>
+                    <div class="skill-card">Networking & Linux</div>
+                </div>
+            </section>
+
+            <section>
+                <h2>Certifications</h2>
+                <div class="projects-grid">
+                    <div class="project-card" style="border-left: 3px solid #38bdf8;">
+                        <h3>Introduction to Cyber Security</h3>
+                        <p>Issued by: Cisco Networking Academy</p>
+                        <p style="font-size: 0.9rem; color: #94a3b8; margin-top: 5px;">Date: 2026</p>
+                        <a href="https://drive.google.com/file/d/1TMxAwZ7yXQ10Ft0Gmcmt8kWL08oHC5oH/view?usp=sharing" target="_blank" class="project-link">View</a>
+                    </div>
+                    <div class="project-card" style="border-left: 3px solid #38bdf8;">
+                        <h3>C essentials</h3>
+                        <p>Issued by: Cisco Networking Academy</p>
+                        <p style="font-size: 0.9rem; color: #94a3b8; margin-top: 5px;">Date: 2025</p>
+                        <a href="https://drive.google.com/file/d/1wF96xu0mU0ZgtitYrm8qVV_TkUfx-PR3/view?usp=sharing" target="_blank" class="project-link">View</a>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h2>My Projects</h2>
+                
+                <div class="project-card">
+                    <h3>Object Detecting Robo car</h3>
+                    <p>In fabrication lab an autonomous robotic car was developed using the Arduino Uno to demonstrate basic path planning and navigation. The system detects obstacles and adjust its movement to navigate safely.</p>
+                    <a href="https://youtu.be/QqQo80_yY_U" target="_blank" class="project-link">View Video →</a>
+                </div>
+
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <h3>DHCP & Wireshark Analysis</h3>
+                        <p>Designed and configured a dynamic network architecture in Cisco Packet Tracer to automate client IP address allocation. Captured and analyzed the underlying DORA process via Wireshark.</p>
+                        <button class="project-btn" onclick="openProjectTab()">View Project Details →</button>
+                    </div>
+
+                    <div class="project-card">
+                        <h3>Future Project</h3>
+                        <p>This space is reserved for my upcoming Cyber Security or Web Development project. Stay tuned!</p>
+                        <button class="project-btn" onclick="alert('Coming soon! 🚀')">View Code →</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+
+    <div id="project-tab" class="hidden">
+        <header>
+            <h1>Project: DHCP & Wireshark Analysis</h1>
+            <p>Specialized Cyber Security Deep-Dive</p>
+        </header>
+        <div class="container">
+            <section>
+                <h2>Project Overview</h2>
+                <p>Designed and configured a dynamic network architecture in Cisco Packet Tracer to automate client IP address allocation. Captured and analyzed the underlying DORA process via Wireshark to verify packet-level compliance and network efficiency.</p>
+                <br>
+                <h4>Problem Statement</h4>
+                <p>An enterprise network contains a legitimate DHCP server and a rogue DHCP server. If clients accept offers from the fake server, attackers can manipulate IP settings, reroute traffic, or block network access — causing outages and interception risks.</p>
+                <h4>Objectives</h4>
+                <ul><li>Understand the working of DHCP in enterprise networks.</li>
+                    <li>Understand the working of DHCP in enterprise networks.</li>
+                    <li>    Simulate a Rogue DHCP Server attack.</li>
+                    <li>Analyze DHCP traffic using Wireshark.</li>
+                    <li>Implement DHCP Snooping to improve network security.</li></ul>
+                    <h4>Background</h4>
+                    <p>Dynamic Host Configuration Protocol (DHCP) automatically assigns IP addresses, subnet masks, gateways, and DNS settings to devices. It centralizes address management for faster provisioning and consistent network configuration across large enterprise environments.
+        
+                    </p>
+                    <img src="C:\Users\Riddhi\OneDrive\Desktop\Portfolio\Screenshot 2026-07-04 180933.jpg" alt="Project Screenshot" style="width: 100%; border-radius: 8px; margin-top: 15px; border: 1px solid #334155;">
+                    <img src="C:\Users\Riddhi\OneDrive\Desktop\Portfolio\Screenshot 2026-07-04 181428.jpg" alt="Project Screenshot" style="width: 100%; border-radius: 8px; margin-top: 15px; border: 1px solid #334155;">
+                <p>
+                    
+
+                    <strong>Tools Used:</strong> Cisco Packet Tracer, Wireshark, NetworkPM.jpeging protocols</p>
+                <p><strong>Key Takeaways:</strong> Detailed understanding of the DORA (Discover, Offer, Request, Acknowledge) process, analyzing packet structures, and ensuring network broadcast safety.</p>
+                <h4>SDG mapping</h4>
+                    <p>This project aligns with Sustainable Development Goal 9: Industry, Innovation and Infrastructure. By securing DHCP services and strengthening enterprise network resilience, we support scalable, reliable infrastructure and protect digital services that underpin economic activity.</p>
+                    <h4>Conclusion</h4>
+                    <p>This project demonstrated the implementation of a secure enterprise DHCP network using Cisco Packet Tracer. It highlighted the risks posed by Rogue DHCP Server attacks and showed how DHCP Snooping can effectively protect enterprise networks by allowing only trusted DHCP servers to assign IP addresses.</p>
+                    <h4>References</h4>
+                    <p>Cisco Networking Academy – Course materials on DHCP, networking fundamentals, and Packet Tracer</p>
+                <h3 style="color: #38bdf8; margin-top: 2rem;">Project Demo Video</h3>
+                <div class="video-container">
+                    <iframe src="C:\Users\Riddhi\OneDrive\Desktop\Portfolio\WhatsApp Video 2026-07-04 at 8.49.01 PM.mp4"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen>
+                    </iframe>
+                    
+                </div>
+                
+                <button class="back-btn" onclick="closeProjectTab()">← Back to Portfolio</button>
+            </section>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2026 | Designed & Secured by a Cyber Security Student</p>
+    </footer>
+
+
+    <script>
+        function openProjectTab() {
+            document.getElementById('main-portfolio').classList.add('hidden');
+            document.getElementById('project-tab').classList.remove('hidden');
+            window.scrollTo(0, 0); 
+        }
+
+        function closeProjectTab() {
+            document.getElementById('project-tab').classList.add('hidden');
+            document.getElementById('main-portfolio').classList.remove('hidden');
+            window.scrollTo(0, 0);
+        }
+    </script>
+
+</body>
+</html>
